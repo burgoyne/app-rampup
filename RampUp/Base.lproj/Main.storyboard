@@ -21,11 +21,24 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ew-ep-fag">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyf-e3-17L">
+                                <rect key="frame" x="258" y="586" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="hjm-Ud-Eni"/>
+                                    <constraint firstAttribute="width" constant="107" id="qEL-Pk-aSR"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="YA9-YF-zfO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4ew-ep-fag" firstAttribute="bottom" secondItem="Udx-hs-rhb" secondAttribute="bottom" id="E14-bB-ghL"/>
+                            <constraint firstItem="Udx-hs-rhb" firstAttribute="bottom" secondItem="lyf-e3-17L" secondAttribute="bottom" constant="10" id="ERF-8b-l4p"/>
                             <constraint firstItem="4ew-ep-fag" firstAttribute="top" secondItem="LaJ-Mo-Yqd" secondAttribute="top" id="dnS-Z2-lh2"/>
+                            <constraint firstItem="Udx-hs-rhb" firstAttribute="trailing" secondItem="lyf-e3-17L" secondAttribute="trailing" constant="10" id="p3T-fZ-Yqm"/>
                             <constraint firstItem="4ew-ep-fag" firstAttribute="trailing" secondItem="Udx-hs-rhb" secondAttribute="trailing" id="uCg-dH-YUD"/>
                             <constraint firstItem="4ew-ep-fag" firstAttribute="leading" secondItem="Udx-hs-rhb" secondAttribute="leading" id="ulv-SO-CsS"/>
                         </constraints>
@@ -40,4 +53,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
